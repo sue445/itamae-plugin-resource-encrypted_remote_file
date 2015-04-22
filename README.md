@@ -1,8 +1,8 @@
 # Itamae::Plugin::Resource::EncryptedRemoteFile
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/itamae/plugin/resource/encrypted_remote_file`. To experiment with that code, run `bin/console` for an interactive prompt.
+encrypt secret data (ex. id_rsa), and forward decrypted file to remote.
 
-TODO: Delete this and the text above, and describe your gem
+This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_data_bag)
 
 ## Installation
 
@@ -22,7 +22,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Encrypt data
+install [reversible_cryptography](https://github.com/mitaku/reversible_cryptography)
+
+```sh
+gem install reversible_cryptography
+
+
+```
+
+### Recipe
+
+```ruby
+encrypted_remote_file "/home/deployer/.ssh/id_rsa" do
+  owner    "root"
+  group    "root"
+  source   "remote_files/encrypted_file.txt"
+  password ENV["PASSWORD"]
+end
+```
 
 ## Development
 
@@ -32,7 +50,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/itamae-plugin-resource-encrypted_remote_file/fork )
+1. Fork it ( https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
