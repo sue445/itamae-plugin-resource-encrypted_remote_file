@@ -6,6 +6,7 @@ This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_dat
 
 [![Build Status](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file.svg?branch=master)](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file)
 [![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
+[![Coverage Status](https://coveralls.io/repos/sue445/itamae-plugin-resource-encrypted_remote_file/badge.svg)](https://coveralls.io/r/sue445/itamae-plugin-resource-encrypted_remote_file)
 
 ## Installation
 
