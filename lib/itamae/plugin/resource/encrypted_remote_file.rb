@@ -11,7 +11,7 @@ module Itamae
 
         def pre_action
           src_expanded_path = ::File.expand_path(attributes.source, ::File.dirname(@recipe.path))
-          encrypted_data = File.read(src_expanded_path)
+          encrypted_data = File.read(src_expanded_path).strip
 
           decrypted_data = ReversibleCryptography::Message.decrypt(encrypted_data, attributes.password)
           @decrypted_tempfile = Tempfile.open(File.basename(attributes.source)) do |f|
