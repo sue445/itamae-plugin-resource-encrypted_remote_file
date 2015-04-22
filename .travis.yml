@@ -14,6 +14,8 @@ branches:
   - master
 notifications:
   email: false
+  slack:
+    secure: SusEtW3pV+b+KUQoQjhqTI+7QtaDXlVl0Wx2EPo1VA4k/t9M/FRZXAXxq2j5+K3QE0y4p4QbnMRoZ8W8l4f7NXzOi7CFHQAnKUVDswZdsj2udEWeNWUeN4Rub0de3sInfKkbZKfT0uhamToX/pRH7uhOogeL9Eei+KUekUXJKTE=
 matrix:
   allow_failures:
   - rvm: ruby-head
