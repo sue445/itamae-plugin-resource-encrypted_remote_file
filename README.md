@@ -4,6 +4,8 @@ encrypt secret data (ex. id_rsa), and forward decrypted file to remote.
 
 This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_data_bag)
 
+[![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
+
 ## Installation
 
 Add this line to your application's Gemfile:
