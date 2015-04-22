@@ -1,10 +1,9 @@
-require "itamae/plugin/resource/encrypted_remote_file/version"
+require "itamae"
 
 module Itamae
   module Plugin
     module Resource
-      module EncryptedRemoteFile
-        # Your code goes here...
+      class EncryptedRemoteFile < ::Itamae::Resource::Base
       end
     end
   end
