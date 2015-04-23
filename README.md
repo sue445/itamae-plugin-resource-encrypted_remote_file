@@ -34,7 +34,7 @@ install [reversible_cryptography](https://github.com/mitaku/reversible_cryptogra
 ```sh
 gem install reversible_cryptography
 
-
+reversible_cryptography encrypt --password=PASSWORD --src-file=/path/to/secret_file.txt --dst-file=/pass/to/encrypted_file.txt
 ```
 
 ### Recipe
@@ -43,8 +43,43 @@ gem install reversible_cryptography
 encrypted_remote_file "/home/deployer/.ssh/id_rsa" do
   owner    "root"
   group    "root"
-  source   "remote_files/encrypted_file.txt"
-  password ENV["PASSWORD"]
+  source   "remote_files/id_rsa.encrypted"
+  password ENV["ID_RSA_PASSWORD"]
+end
+```
+
+## ProTip
+### Use with [dotenv](https://github.com/bkeepers/dotenv)
+
+#### Gemfile
+```ruby
+gem "itamae-plugin-resource-encrypted_remote_file"
+gem "dotenv"
+```
+
+#### .env (don't commit this!)
+```sh
+ID_RSA_PASSWORD=12345678
+```
+
+#### .gitignore
+```
+.env
+```
+
+#### your_recipe.rb
+```ruby
+require 'dotenv'
+Dotenv.load
+
+ENV["ID_RSA_PASSWORD"]
+#=> "12345678"
+
+encrypted_remote_file "/home/deployer/.ssh/id_rsa" do
+  owner    "root"
+  group    "root"
+  source   "remote_files/id_rsa.encrypted"
+  password ENV["ID_RSA_PASSWORD"]
 end
 ```
 
