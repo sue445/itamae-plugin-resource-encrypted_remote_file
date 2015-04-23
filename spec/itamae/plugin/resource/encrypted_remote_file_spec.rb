@@ -20,7 +20,7 @@ describe Itamae::Plugin::Resource::EncryptedRemoteFile do
     subject { resource.pre_action }
 
     it "should create decrypted file" do
-      expect(resource).to receive(:send_file) do |src, dst|
+      expect(resource).to receive_message_chain(:backend, :send_file) do |src, dst|
         expect(dst).to be_an_instance_of(String)
 
         expect(src).to be_an_instance_of(String)
