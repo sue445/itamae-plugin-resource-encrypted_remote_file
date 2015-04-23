@@ -1,5 +1,5 @@
 if ENV["COVERAGE"]
-  require 'coveralls'
+  require "coveralls"
   Coveralls.wear!
 end
 

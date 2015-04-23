@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1.beta1"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
-  spec.licenses      = ['MIT']
+  spec.licenses      = ["MIT"]
 
   spec.summary       = "encrypt secret data, and forward decrypted file to remote."
   spec.description   = "encrypt secret data, and forward decrypted file to remote."
