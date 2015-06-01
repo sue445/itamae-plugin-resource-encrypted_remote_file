@@ -10,11 +10,10 @@ module Itamae
         define_attribute :password, type: String
 
         def pre_action
-          src_expanded_path = ::File.expand_path(attributes.source, ::File.dirname(@recipe.path))
-          encrypted_data = File.read(src_expanded_path).strip
+          encrypted_data = File.read(source_file).strip
 
           decrypted_data = ReversibleCryptography::Message.decrypt(encrypted_data, attributes.password)
-          @decrypted_tempfile = Tempfile.open(File.basename(attributes.source)) do |f|
+          @decrypted_tempfile = Tempfile.open(File.basename(source_file)) do |f|
             f.write(decrypted_data)
             f
           end
