@@ -40,6 +40,8 @@ reversible_cryptography encrypt --password=PASSWORD --src-file=/path/to/secret_f
 ### Recipe
 
 ```ruby
+require "itamae-plugin-resource-encrypted_remote_file"
+
 encrypted_remote_file "/home/deployer/.ssh/id_rsa" do
   owner    "root"
   group    "root"
