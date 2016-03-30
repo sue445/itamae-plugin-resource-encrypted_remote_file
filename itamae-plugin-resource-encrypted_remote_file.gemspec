@@ -30,7 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "reversible_cryptography"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "coveralls"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
 end
