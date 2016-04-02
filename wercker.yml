@@ -65,10 +65,6 @@ build:
             code: bundle exec paraduct test
 
     after-steps:
-        - script:
-            name: shutdown old vms
-            code: bundle exec ruby ci/destroy_old_droplets.rb
-
         - wantedly/pretty-slack-notify:
             webhook_url: $SLACK_WEBHOOK_URL
             username: wercker_build
