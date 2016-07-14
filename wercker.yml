@@ -3,7 +3,7 @@
 # https://registry.hub.docker.com/_/ruby/
 # If you want to use a specific version you would use a tag:
 # ruby:2.2.2
-box: sue445/rvm-vagrant-digitalocean@1.0.0
+box: sue445/rvm-vagrant-digitalocean@1.1.1
 # You can also use services such as databases. Read more on our dev center:
 # http://devcenter.wercker.com/docs/services/index.html
 # services:
@@ -22,11 +22,13 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
         - rvm-use:
-            version: 2.3.0
+            version: 2.3.1
 
+        # NOTE: vagrant 1.8.4 use bundler 1.12.5
+        # https://github.com/mitchellh/vagrant/blob/v1.8.4/vagrant.gemspec#L23
         - script:
             name: install bundler
-            code: gem install bundler -v 1.10.6 --no-document
+            code: gem install bundler -v 1.12.5 --no-document
 
         - bundle-install:
             jobs: 4
