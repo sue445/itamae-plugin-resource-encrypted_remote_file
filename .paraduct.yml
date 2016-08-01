@@ -1,9 +1,0 @@
-script: |-
-  ./ci/build.sh ${HOST}
-after_script: |-
-  vagrant destroy -f $HOST
-variables:
-  HOST:
-    - debian8
-    - centos70
-max_threads: 4
