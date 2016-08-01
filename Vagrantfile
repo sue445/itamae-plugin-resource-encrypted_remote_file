@@ -16,6 +16,7 @@ Vagrant.configure(2) do |config|
     if ENV["WERCKER"] == "true"
       provider.ssh_key_name = "wercker-#{ENV['WERCKER_GIT_REPOSITORY']}"
       override.ssh.private_key_path = "~/.ssh/id_rsa.vagrant"
+      override.vm.synced_folder ".", "/vagrant", disabled: true
     else
       provider.ssh_key_name = "local"
       override.ssh.private_key_path = "~/.ssh/id_rsa"
