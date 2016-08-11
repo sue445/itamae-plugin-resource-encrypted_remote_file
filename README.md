@@ -1,6 +1,6 @@
 # Itamae::Plugin::Resource::EncryptedRemoteFile
 
-encrypt secret data (ex. id_rsa), and forward decrypted file to remote.
+encrypt secret data (e.g. id_rsa), and forward decrypted file to remote.
 
 This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_data_bag)
 
