@@ -93,9 +93,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 requirements [Vagrant](https://www.vagrantup.com/)
 
 ```sh
-vagrant up centos70
-bundle exec rake itamae:centos70
-bundle exec rake spec:centos70
+vagrant up centos7
+bundle exec rake itamae:centos7
+bundle exec rake spec:centos7
 ```
 
 ## Contributing
