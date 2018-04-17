@@ -8,8 +8,6 @@ This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_dat
 [![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
 [![Dependency Status](https://gemnasium.com/sue445/itamae-plugin-resource-encrypted_remote_file.svg)](https://gemnasium.com/sue445/itamae-plugin-resource-encrypted_remote_file)
 
-[![wercker status](https://app.wercker.com/status/7b3074cbef6200439b30ef89eed393df/m/master "wercker status")](https://app.wercker.com/project/bykey/7b3074cbef6200439b30ef89eed393df)
-
 ## Installation
 
 Add this line to your application's Gemfile:
