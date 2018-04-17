@@ -5,10 +5,9 @@ encrypt secret data (e.g. id_rsa), and forward decrypted file to remote.
 This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_data_bag)
 
 [![Gem Version](https://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file.svg)](http://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file)
+[![Build Status](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file.svg?branch=master)](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file)
 [![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
 [![Dependency Status](https://gemnasium.com/sue445/itamae-plugin-resource-encrypted_remote_file.svg)](https://gemnasium.com/sue445/itamae-plugin-resource-encrypted_remote_file)
-
-[![wercker status](https://app.wercker.com/status/7b3074cbef6200439b30ef89eed393df/m/master "wercker status")](https://app.wercker.com/project/bykey/7b3074cbef6200439b30ef89eed393df)
 
 ## Installation
 
@@ -90,12 +89,11 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Testing
-requirements [Vagrant](https://www.vagrantup.com/)
+requirements [Docker](https://www.docker.com/)
 
 ```sh
-vagrant up centos7
-bundle exec rake itamae:centos7
-bundle exec rake spec:centos7
+bundle exec itamae docker --node-yaml=recipes/node.yml recipes/install.rb --image=centos:7 --tag itamae-plugin:latest
+DOCKER_IMAGE=itamae-plugin:latest bundle exec rspec
 ```
 
 ## Contributing
