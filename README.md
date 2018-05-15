@@ -7,7 +7,6 @@ This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_dat
 [![Gem Version](https://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file.svg)](http://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file)
 [![Build Status](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file.svg?branch=master)](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file)
 [![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
-[![Dependency Status](https://gemnasium.com/sue445/itamae-plugin-resource-encrypted_remote_file.svg)](https://gemnasium.com/sue445/itamae-plugin-resource-encrypted_remote_file)
 
 ## Installation
 
