@@ -1,24 +1,24 @@
 language: ruby
 sudo: required
 services:
-- docker
+  - docker
 rvm:
-- 2.3
+  - 2.3
 env:
-- IMAGE=centos:7
-- IMAGE=debian:jessie
-- IMAGE=debian:stretch
+  - IMAGE=centos:7
+  - IMAGE=debian:jessie
+  - IMAGE=debian:stretch
 bundler_args: "--jobs=4"
 cache: bundler
 before_install:
-- gem update --system --no-document
-- gem install bundler --no-document
+  - travis_retry gem update --system || travis_retry gem update --system 2.7.8
+  - travis_retry gem install bundler --no-document || travis_retry gem install bundler --no-document -v 1.17.3
 script:
-- bundle exec itamae docker --node-yaml=recipes/node.yml recipes/install.rb --image=$IMAGE --tag itamae-plugin:latest
-- DOCKER_IMAGE=itamae-plugin:latest bundle exec rspec
+  - bundle exec itamae docker --node-yaml=recipes/node.yml recipes/install.rb --image=$IMAGE --tag itamae-plugin:latest
+  - DOCKER_IMAGE=itamae-plugin:latest bundle exec rspec
 branches:
   only:
-  - master
+    - master
 notifications:
   email: false
   slack:
