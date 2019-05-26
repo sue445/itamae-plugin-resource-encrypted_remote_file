@@ -18,7 +18,7 @@ set :docker_container, ENV['DOCKER_CONTAINER']
 
 # via. http://qiita.com/sue445/items/b67b0e7209a7fae1a52a
 require "yaml"
-require "itamae/node"
+require "itamae"
 
 def node
   return @node if @node
