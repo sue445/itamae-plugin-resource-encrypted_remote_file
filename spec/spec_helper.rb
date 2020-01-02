@@ -23,7 +23,7 @@ require "itamae"
 def node
   return @node if @node
 
-  hash = YAML.load_file("#{__dir__}/../recipes/node.yml")
+  hash = YAML.load_file("#{__dir__}/recipes/node.yml")
 
   @node = Itamae::Node.new(hash, Specinfra.backend)
 end

@@ -5,7 +5,7 @@ encrypt secret data (e.g. id_rsa), and forward decrypted file to remote.
 This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_data_bag)
 
 [![Gem Version](https://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file.svg)](http://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file)
-[![Build Status](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file.svg?branch=master)](https://travis-ci.org/sue445/itamae-plugin-resource-encrypted_remote_file)
+[![Build Status](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/workflows/test/badge.svg?branch=master)](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/actions?query=workflow%3Atest)
 [![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
 
 ## Installation
@@ -91,7 +91,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 requirements [Docker](https://www.docker.com/)
 
 ```sh
-bundle exec itamae docker --node-yaml=recipes/node.yml recipes/install.rb --image=centos:7 --tag itamae-plugin:latest
+bundle exec itamae docker --node-yaml=spec/recipes/node.yml spec/recipes/install.rb --image=centos:7 --tag itamae-plugin:latest
 DOCKER_IMAGE=itamae-plugin:latest bundle exec rspec
 ```
 
