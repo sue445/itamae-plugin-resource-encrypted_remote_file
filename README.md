@@ -91,7 +91,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 requirements [Docker](https://www.docker.com/)
 
 ```sh
-bundle exec itamae docker --node-yaml=recipes/node.yml recipes/install.rb --image=centos:7 --tag itamae-plugin:latest
+bundle exec itamae docker --node-yaml=spec/recipes/node.yml spec/recipes/install.rb --image=centos:7 --tag itamae-plugin:latest
 DOCKER_IMAGE=itamae-plugin:latest bundle exec rspec
 ```
 
