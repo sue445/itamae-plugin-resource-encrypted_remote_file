@@ -1,5 +1,11 @@
 ## master
-[full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.2...master)
+[full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.3...master)
+
+## 0.0.3 (2021/11/20)
+[full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.2...v0.0.3)
+
+* Enable MFA requirement for gem releasing
+  * https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/pull/25
 
 ## 0.0.2 (2015/06/02)
 [full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.1...v0.0.2)
