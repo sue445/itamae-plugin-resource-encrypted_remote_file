@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "itamae-plugin-resource-encrypted_remote_file"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
   spec.licenses      = ["MIT"]
