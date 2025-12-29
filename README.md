@@ -6,7 +6,7 @@ This is like to [knife-solo_data_bag](https://github.com/thbishop/knife-solo_dat
 
 [![Gem Version](https://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file.svg)](http://badge.fury.io/rb/itamae-plugin-resource-encrypted_remote_file)
 [![test](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/actions/workflows/test.yml)
-[![Code Climate](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file/badges/gpa.svg)](https://codeclimate.com/github/sue445/itamae-plugin-resource-encrypted_remote_file)
+[![Maintainability](https://qlty.sh/gh/sue445/projects/itamae-plugin-resource-encrypted_remote_file/maintainability.svg)](https://qlty.sh/gh/sue445/projects/itamae-plugin-resource-encrypted_remote_file)
 
 ## Installation
 
