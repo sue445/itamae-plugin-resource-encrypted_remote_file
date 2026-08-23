@@ -1,5 +1,11 @@
 ## master
-[full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.4...master)
+[full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.5...master)
+
+## [0.0.5](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/releases/tag/v0.0.5) (2026/08/23)
+[full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.4...v0.0.5)
+
+* Migrate release_gem workflow to sue445/workflows (Also testing the gem release)
+  * https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/pull/69
 
 ## [0.0.4](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/releases/tag/v0.0.4) (2025/11/29)
 [full changelog](https://github.com/sue445/itamae-plugin-resource-encrypted_remote_file/compare/v0.0.3...v0.0.4)
